@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemoSuite" verbose="1" parallel="false">
+    <test name="SauceDemoTests">
+        <classes>
+            <class name="com.mehedik.selenium.tests.LoginTest"/>
+            <class name="com.mehedik.selenium.tests.SortingTest"/>
+            <class name="com.mehedik.selenium.tests.CartTest"/>
+            <class name="com.mehedik.selenium.tests.CheckoutTest"/>
+        </classes>
+    </test>
+</suite>
