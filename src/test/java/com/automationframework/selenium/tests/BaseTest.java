@@ -1,8 +1,8 @@
-package com.mehedik.selenium.tests;
+package com.automationframework.selenium.tests;
 
-import com.mehedik.selenium.listeners.ScreenshotListener;
-import com.mehedik.selenium.pages.LoginPage;
-import com.mehedik.selenium.utils.DriverFactory;
+import com.automationframework.selenium.listeners.ScreenshotListener;
+import com.automationframework.selenium.pages.LoginPage;
+import com.automationframework.selenium.utils.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,6 +1,6 @@
-package com.mehedik.selenium.listeners;
+package com.automationframework.selenium.listeners;
 
-import com.mehedik.selenium.utils.DriverFactory;
+import com.automationframework.selenium.utils.DriverFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;

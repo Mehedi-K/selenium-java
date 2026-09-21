@@ -1,10 +1,10 @@
-package com.mehedik.selenium.tests;
+package com.automationframework.selenium.tests;
 
-import com.mehedik.selenium.pages.CartPage;
-import com.mehedik.selenium.pages.CheckoutCompletePage;
-import com.mehedik.selenium.pages.CheckoutStepOnePage;
-import com.mehedik.selenium.pages.CheckoutStepTwoPage;
-import com.mehedik.selenium.pages.ProductsPage;
+import com.automationframework.selenium.pages.CartPage;
+import com.automationframework.selenium.pages.CheckoutCompletePage;
+import com.automationframework.selenium.pages.CheckoutStepOnePage;
+import com.automationframework.selenium.pages.CheckoutStepTwoPage;
+import com.automationframework.selenium.pages.ProductsPage;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;

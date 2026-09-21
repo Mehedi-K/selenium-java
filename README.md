@@ -57,7 +57,7 @@ screenshot taken on a test failure lands in `screenshots/` (gitignored).
 ```
 selenium-java/
   pom.xml                                     Maven build config (Selenium, TestNG, Logback)
-  src/main/java/com/mehedik/selenium/
+  src/main/java/com/automationframework/selenium/
     pages/                                    Page Object Model classes
       BasePage.java                           Shared explicit-wait helpers
       LoginPage.java                          Login form + error handling
@@ -69,7 +69,7 @@ selenium-java/
     utils/
       DriverFactory.java                      Creates/quits ChromeDriver, headless toggle, thread-safe
       ConfigReader.java                       Reads config.properties (base URL, waits, etc.)
-  src/test/java/com/mehedik/selenium/
+  src/test/java/com/automationframework/selenium/
     tests/
       BaseTest.java                           TestNG @BeforeMethod/@AfterMethod driver lifecycle
       LoginTest.java                          Valid/invalid/locked-out/empty-field login + data-driven sweep

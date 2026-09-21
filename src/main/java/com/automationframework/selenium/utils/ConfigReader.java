@@ -1,4 +1,4 @@
-package com.mehedik.selenium.utils;
+package com.automationframework.selenium.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

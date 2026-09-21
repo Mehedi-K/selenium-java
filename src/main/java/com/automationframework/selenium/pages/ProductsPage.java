@@ -1,4 +1,4 @@
-package com.mehedik.selenium.pages;
+package com.automationframework.selenium.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

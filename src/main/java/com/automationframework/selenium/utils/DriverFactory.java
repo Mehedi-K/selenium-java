@@ -1,4 +1,4 @@
-package com.mehedik.selenium.utils;
+package com.automationframework.selenium.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

@@ -1,7 +1,7 @@
-package com.mehedik.selenium.tests;
+package com.automationframework.selenium.tests;
 
-import com.mehedik.selenium.pages.LoginPage;
-import com.mehedik.selenium.pages.ProductsPage;
+import com.automationframework.selenium.pages.LoginPage;
+import com.automationframework.selenium.pages.ProductsPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

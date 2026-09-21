@@ -1,6 +1,6 @@
-package com.mehedik.selenium.pages;
+package com.automationframework.selenium.pages;
 
-import com.mehedik.selenium.utils.ConfigReader;
+import com.automationframework.selenium.utils.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
