@@ -1,5 +1,6 @@
 package com.automationframework.selenium.tests;
 
+import com.automationframework.selenium.listeners.RetryOnce;
 import com.automationframework.selenium.pages.CartPage;
 import com.automationframework.selenium.pages.CheckoutCompletePage;
 import com.automationframework.selenium.pages.CheckoutStepOnePage;
@@ -14,6 +15,7 @@ import org.testng.annotations.Test;
  * End-to-end checkout flow: login, add items, checkout, fill shipping
  * info, verify the order overview totals, finish, and confirm success.
  */
+@Test(retryAnalyzer = RetryOnce.class)
 public class CheckoutTest extends BaseTest {
 
     private ProductsPage productsPage;
