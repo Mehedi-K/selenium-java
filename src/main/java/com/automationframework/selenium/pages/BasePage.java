@@ -22,6 +22,10 @@ public abstract class BasePage {
 
     private static final Logger LOG = LoggerFactory.getLogger(BasePage.class);
 
+    private static final String SET_INPUT_VALUE =
+            "Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(arguments[0], arguments[1]);"
+            + "arguments[0].dispatchEvent(new Event('input', {bubbles: true}));";
+
     protected final WebDriver driver;
     protected final WebDriverWait wait;
 
@@ -65,6 +69,12 @@ public abstract class BasePage {
         WebElement element = waitForVisible(locator);
         element.clear();
         element.sendKeys(text);
+        // Once saucedemo's page has sat idle, Chrome intermittently drops native key
+        // events to it (seen on CI); fall back to the setter React listens to.
+        if (!text.equals(element.getDomProperty("value"))) {
+            LOG.warn("Native typing into {} was dropped, setting the value via JavaScript", locator);
+            ((JavascriptExecutor) driver).executeScript(SET_INPUT_VALUE, element, text);
+        }
     }
 
     protected String getText(By locator) {
